@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JuneTrail — 4x4 & Adventure Gear</title>
-  <meta name="description" content="Independent 4x4 reviews, engineering analysis, and buying guides for Australian enthusiasts." />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <!-- Google Fonts -->
+  <title>June Trail · black & white</title>
+  <meta name="description" content="June Trail — black & white theme with upload sections and red amazon links." />
+  <!-- Google Fonts (clean, minimal) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Roboto+Slab:wght@400;600;700;800&display=swap" rel="stylesheet" />
@@ -24,12 +23,12 @@
       line-height: 1.6;
     }
     a {
-      color: #0055a0;
+      color: #000000;
       text-decoration: none;
       transition: color 0.15s;
     }
     a:hover {
-      color: #003d73;
+      color: #555;
     }
     img {
       max-width: 100%;
@@ -43,16 +42,13 @@
     }
 
     /* ----- TYPOGRAPHY ----- */
-    h1,
-    h2,
-    h3,
-    .heading-font {
+    h1, h2, h3, .heading-font {
       font-family: 'Roboto Slab', serif;
       font-weight: 700;
       letter-spacing: -0.01em;
     }
     .text-accent {
-      color: #0055a0;
+      color: #000000;
     }
     .text-muted {
       color: #666666;
@@ -64,12 +60,12 @@
       border-color: #e0e4e8;
     }
 
-    /* ----- BUTTONS ----- */
+    /* ----- BUTTONS (black/white) ----- */
     .btn {
       display: inline-block;
       background: transparent;
-      border: 2px solid #0055a0;
-      color: #0055a0;
+      border: 2px solid #000000;
+      color: #000000;
       padding: 0.7rem 1.8rem;
       font-weight: 600;
       border-radius: 40px;
@@ -80,23 +76,23 @@
       letter-spacing: 0.3px;
     }
     .btn-primary {
-      background: #0055a0;
+      background: #000000;
       color: #ffffff;
-      border-color: #0055a0;
+      border-color: #000000;
     }
     .btn-primary:hover {
-      background: #003d73;
-      border-color: #003d73;
+      background: #333;
+      border-color: #333;
       color: #fff;
     }
     .btn-outline:hover {
-      background: #0055a010;
+      background: #00000010;
     }
 
     /* ----- HEADER (White) ----- */
     header {
       background: #ffffff;
-      border-bottom: 1px solid #e0e4e8;
+      border-bottom: 2px solid #000000;
       padding: 0.8rem 0;
       position: sticky;
       top: 0;
@@ -119,9 +115,9 @@
       color: #1a1a1a;
       letter-spacing: -0.5px;
     }
+    /* no logo image, just "june trail" text */
     .logo svg {
-      height: 40px;
-      width: auto;
+      display: none;
     }
     .logo-sub {
       font-size: 0.7rem;
@@ -137,21 +133,24 @@
       display: flex;
       gap: 1.8rem;
       font-weight: 500;
-      font-size: 0.9rem;
+      font-size: 0.95rem;
       flex-wrap: wrap;
     }
     .nav-links a {
       color: #1a1a1a;
+      border-bottom: 2px solid transparent;
+      padding-bottom: 0.2rem;
     }
     .nav-links a:hover {
-      color: #0055a0;
+      color: #000000;
+      border-bottom-color: #000000;
     }
 
-    /* ----- HERO (White background) ----- */
+    /* ----- HERO (White background, black text) ----- */
     .hero {
-      padding: 4rem 0 3rem;
-      background: #f5f7fa;
-      border-bottom: 1px solid #e0e4e8;
+      padding: 3rem 0 2.5rem;
+      background: #ffffff;
+      border-bottom: 2px solid #000000;
     }
     .hero h1 {
       font-size: 3.2rem;
@@ -171,11 +170,11 @@
       flex-wrap: wrap;
     }
 
-    /* ----- CARDS (White with shadow) ----- */
+    /* ----- CARDS (White with black border) ----- */
     .section-title {
       font-size: 2rem;
       margin: 2.5rem 0 1.8rem;
-      border-left: 6px solid #0055a0;
+      border-left: 6px solid #000000;
       padding-left: 1rem;
       color: #1a1a1a;
     }
@@ -186,26 +185,27 @@
     }
     .article-card {
       background: #ffffff;
-      border-radius: 16px;
+      border-radius: 12px;
       overflow: hidden;
-      border: 1px solid #e0e4e8;
+      border: 2px solid #000000;
       transition: transform 0.15s, box-shadow 0.2s;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 4px 0 #000000;
     }
     .article-card:hover {
       transform: translateY(-4px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 8px 0 #000000;
     }
     .card-img {
       height: 180px;
-      background: #e8ecf0;
+      background: #f0f0f0;
       object-fit: cover;
       width: 100%;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #888;
+      color: #333;
       font-size: 0.9rem;
+      border-bottom: 2px solid #000000;
     }
     .card-body {
       padding: 1.2rem 1.5rem 1.8rem;
@@ -214,7 +214,7 @@
       font-size: 0.75rem;
       text-transform: uppercase;
       letter-spacing: 0.5px;
-      color: #0055a0;
+      color: #000000;
       font-weight: 600;
     }
     .card-title {
@@ -236,25 +236,55 @@
       margin: 0.4rem 0;
     }
 
-    /* ----- SCORE PILL (Blue accent) ----- */
-    .score-pill {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.4rem;
-      background: #f0f4f8;
+    /* ----- UPLOAD PILL (black/white) ----- */
+    .upload-pill {
+      display: inline-block;
+      background: #000000;
+      color: #ffffff;
+      padding: 0.2rem 1.2rem;
       border-radius: 40px;
-      padding: 0.2rem 1rem 0.2rem 0.6rem;
-      border: 1px solid #d0d8e0;
+      font-size: 0.75rem;
       font-weight: 600;
-      font-size: 0.8rem;
-      color: #1a1a1a;
+      letter-spacing: 0.5px;
     }
-    .score-pill .num {
-      color: #0055a0;
-      font-size: 1rem;
+    .upload-area {
+      background: #fafafa;
+      border: 2px dashed #000000;
+      border-radius: 40px;
+      padding: 0.8rem 1.5rem;
+      text-align: center;
+      font-weight: 500;
+      color: #1a1a1a;
+      transition: 0.2s;
+      cursor: default;
+      margin: 1rem 0;
+    }
+    .upload-area:hover {
+      background: #f0f0f0;
     }
 
-    /* ----- VEHICLE HUB ----- */
+    /* ----- RED AMAZON LINK (as specified) ----- */
+    .amazon-red {
+      display: inline-block;
+      background: #ffffff;
+      color: #cc0000;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 0.4rem 1.6rem;
+      border: 2px solid #cc0000;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      transition: 0.15s;
+      box-shadow: 0 3px 0 #cc0000;
+    }
+    .amazon-red:hover {
+      background: #cc0000;
+      color: #ffffff;
+      box-shadow: 0 3px 0 #000000;
+      border-color: #000000;
+    }
+
+    /* ----- VEHICLE HUB (black/white) ----- */
     .vehicle-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
@@ -262,7 +292,7 @@
     }
     .vehicle-tag {
       background: #ffffff;
-      border: 1px solid #d0d8e0;
+      border: 2px solid #000000;
       border-radius: 40px;
       padding: 0.6rem 1.2rem;
       text-align: center;
@@ -271,49 +301,31 @@
       color: #1a1a1a;
     }
     .vehicle-tag:hover {
-      border-color: #0055a0;
-      background: #f0f4f8;
+      background: #000000;
+      color: #ffffff;
     }
 
-    /* ----- PRODUCT CARD ----- */
+    /* ----- PRODUCT CARD (black/white) ----- */
     .product-card {
       background: #ffffff;
-      border-radius: 16px;
-      border: 1px solid #e0e4e8;
+      border-radius: 12px;
+      border: 2px solid #000000;
       padding: 1.5rem;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      box-shadow: 0 4px 0 #000000;
     }
 
-    /* ----- AFFILIATE BUTTONS ----- */
-    .affiliate-btn {
-      display: inline-block;
-      background: #f0f4f8;
-      padding: 0.3rem 1.2rem;
-      border-radius: 40px;
-      font-size: 0.8rem;
-      color: #0055a0;
-      font-weight: 600;
-      margin-right: 0.5rem;
-      border: 1px solid #d0d8e0;
-      transition: 0.15s;
-    }
-    .affiliate-btn:hover {
-      background: #0055a0;
-      color: #fff;
-      border-color: #0055a0;
-    }
-
-    /* ----- NEWSLETTER (Light blue bg) ----- */
+    /* ----- NEWSLETTER (black/white) ----- */
     .newsletter {
-      background: #f0f4f8;
+      background: #f5f5f5;
       border-radius: 24px;
       padding: 2.5rem 2rem;
-      border: 1px solid #d0d8e0;
+      border: 2px solid #000000;
       margin: 2rem 0;
+      box-shadow: 0 4px 0 #000000;
     }
     .newsletter input {
       background: #ffffff;
-      border: 1px solid #d0d8e0;
+      border: 2px solid #000000;
       padding: 0.8rem 1.2rem;
       border-radius: 60px;
       color: #1a1a1a;
@@ -329,15 +341,15 @@
       gap: 1rem;
     }
 
-    /* ----- SEARCH ----- */
+    /* ----- SEARCH (black/white) ----- */
     .search-wrap {
       background: #ffffff;
       border-radius: 60px;
       padding: 0.2rem 0.2rem 0.2rem 1.5rem;
-      border: 1px solid #d0d8e0;
+      border: 2px solid #000000;
       display: inline-flex;
       align-items: center;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+      box-shadow: 0 4px 0 #000000;
     }
     .search-wrap input {
       background: transparent;
@@ -351,7 +363,7 @@
       color: #888;
     }
     .search-wrap button {
-      background: #0055a0;
+      background: #000000;
       border: none;
       border-radius: 40px;
       padding: 0.5rem 1.8rem;
@@ -360,13 +372,13 @@
       cursor: pointer;
     }
     .search-wrap button:hover {
-      background: #003d73;
+      background: #333;
     }
 
-    /* ----- FOOTER (Dark, but clean) ----- */
+    /* ----- FOOTER (Dark, clean) ----- */
     footer {
       background: #1a1a1a;
-      border-top: 1px solid #333;
+      border-top: 2px solid #000000;
       padding: 2.5rem 0;
       margin-top: 3rem;
       color: #ccc;
@@ -411,15 +423,12 @@
       .logo {
         font-size: 1.4rem;
       }
-      .logo svg {
-        height: 30px;
-      }
     }
 
-    /* ----- DEMO BADGE ----- */
+    /* ----- DEMO BADGE (black) ----- */
     .demo-badge {
-      background: #e8ecf0;
-      color: #666;
+      background: #000000;
+      color: #ffffff;
       font-size: 0.8rem;
       padding: 0.2rem 1rem;
       border-radius: 40px;
@@ -427,55 +436,28 @@
       margin-bottom: 0.5rem;
     }
 
-    /* ----- ENGINEERING BREAKDOWN ----- */
-    .eng-breakdown {
-      background: #f5f7fa;
-      border-left: 4px solid #0055a0;
-      padding: 1.2rem 1.8rem;
+    /* blog & product 1/2, image 1/2 */
+    .half-badge {
+      background: #000000;
+      color: #ffffff;
+      padding: 0.1rem 0.9rem;
+      border-radius: 20px;
+      font-size: 0.7rem;
+      font-weight: 600;
+    }
+    .image-half {
+      background: #f2f2f2;
+      border: 2px solid #000000;
+      padding: 1.2rem 1rem;
+      text-align: center;
+      margin: 0.8rem 0 1rem 0;
+      font-size: 0.95rem;
       border-radius: 8px;
-      margin: 1.5rem 0;
-    }
-    .eng-breakdown dl {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      gap: 0.4rem 2rem;
-    }
-    .eng-breakdown dt {
-      font-weight: 600;
-      color: #0055a0;
-    }
-    .table-wrap {
-      overflow-x: auto;
-      margin: 1.5rem 0;
-    }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: #ffffff;
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid #e0e4e8;
-    }
-    th,
-    td {
-      padding: 0.8rem 1rem;
-      border-bottom: 1px solid #e0e4e8;
-      text-align: left;
-    }
-    th {
-      background: #f5f7fa;
-      color: #0055a0;
-      font-weight: 600;
-    }
-
-    .mt-4 {
-      margin-top: 2rem;
-    }
-    .mb-2 {
-      margin-bottom: 1rem;
-    }
-    .gap-1 {
-      gap: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      flex-wrap: wrap;
     }
   </style>
 </head>
@@ -483,149 +465,132 @@
   <header>
     <div class="container nav-wrap">
       <div class="logo">
-        <!-- JuneTrail SVG Logo (Blue) -->
-        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="22" cy="22" r="20" stroke="#0055a0" stroke-width="3"/>
-          <path d="M12 22 L18 16 L24 22 L30 16" stroke="#0055a0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M12 28 L18 22 L24 28 L30 22" stroke="#0055a0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <rect x="20" y="8" width="4" height="28" rx="2" fill="#0055a0" opacity="0.3"/>
-        </svg>
+        <!-- no logo, just "june trail" -->
         <div>
           JUNETRAIL
-          <span class="logo-sub">4x4 &amp; Adventure Gear</span>
+          <span class="logo-sub">black & white · no logo</span>
         </div>
       </div>
       <div class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">Vehicles</a>
-        <a href="#">Reviews</a>
-        <a href="#">Engineering</a>
-        <a href="#">Guides</a>
-        <a href="#">DIY</a>
-        <a href="#">About</a>
+        <a href="#home">Home</a>
+        <a href="#vehicle">Vehicle</a>
+        <a href="#news">News</a>
+        <a href="#blog">Blog</a>
+        <a href="#products">Products</a>
+        <a href="#guides">Guides</a>
+        <a href="#about">About</a>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- HERO (black/white) -->
     <section class="hero">
       <div class="container">
-        <span class="demo-badge">🔧 Sample Content — Blog-ready</span>
-        <h1>ENGINEERED FOR THE TRACK. <br/><span class="text-accent">TESTED FOR REAL LIFE.</span></h1>
-        <p class="sub">Independent 4x4 reviews, engineering analysis, buying guides and off-road knowledge for Australian enthusiasts.</p>
+        <span class="demo-badge">⬛ JUNE TRAIL · BLACK & WHITE</span>
+        <h1>MINIMAL. <span class="text-accent">FUNCTIONAL.</span></h1>
+        <p class="sub">Upload your content. Blog, products, images — all ready for you.</p>
         <div class="hero-btns">
-          <a href="#" class="btn btn-primary">READ THE LATEST</a>
-          <a href="#" class="btn btn-outline">EXPLORE PRODUCT REVIEWS</a>
+          <a href="#blog" class="btn btn-primary">BLOG UPLOAD</a>
+          <a href="#products" class="btn btn-outline">PRODUCT UPLOAD</a>
         </div>
         <!-- Search -->
-        <div class="search-wrap mt-4">
-          <input type="text" placeholder="Search vehicles, products, topics..." />
+        <div class="search-wrap" style="margin-top:1.5rem;">
+          <input type="text" placeholder="Search..." />
           <button>Search</button>
         </div>
       </div>
     </section>
 
     <div class="container">
-      <!-- LATEST ARTICLES -->
-      <h2 class="section-title">Latest Articles</h2>
+      <!-- BLOG SECTION: upload here, blog 1/2, image 1/2, amazon red -->
+      <h2 class="section-title" id="blog">📄 Blog · Upload</h2>
       <div class="card-grid">
-        <!-- Article 1 -->
-        <article class="article-card">
-          <div class="card-img">📸 Blog Image Placeholder</div>
-          <div class="card-body">
-            <div class="card-cat">Engineering</div>
-            <h3 class="card-title">How does a 3,500 kg towbar actually handle the load?</h3>
-            <p class="card-excerpt">Chassis stress, tongue weight, and real-world towing dynamics.</p>
-            <div class="card-meta"><span>J. Carter</span> <span>·</span> <span>6 min read</span></div>
-            <div style="margin-top:0.6rem;"><span class="score-pill"><span class="num">8.9</span> Engineering Score</span></div>
+        <div class="article-card">
+          <div class="card-img">
+            <span style="display:flex; gap:0.5rem; align-items:center;">
+              <span>🖼️</span> image 1/2 <span class="half-badge">jpg</span>
+            </span>
           </div>
-        </article>
-        <!-- Article 2 -->
-        <article class="article-card">
-          <div class="card-img">📸 Blog Image Placeholder</div>
           <div class="card-body">
-            <div class="card-cat">Product Review</div>
-            <h3 class="card-title">3mm vs 5mm Bash Plates: Does thicker mean better?</h3>
-            <p class="card-excerpt">Material, weight, and protection trade-offs.</p>
-            <div class="card-meta"><span>S. O'Neil</span> <span>·</span> <span>8 min read</span></div>
-            <div style="margin-top:0.6rem;"><span class="score-pill"><span class="num">8.2</span> Engineering Score</span></div>
-          </div>
-        </article>
-        <!-- Article 3 -->
-        <article class="article-card">
-          <div class="card-img">📸 Blog Image Placeholder</div>
-          <div class="card-body">
-            <div class="card-cat">Buying Guide</div>
-            <h3 class="card-title">Best recovery boards for Australian touring</h3>
-            <p class="card-excerpt">Sand, mud, and red dirt tested.</p>
-            <div class="card-meta"><span>L. Hayes</span> <span>·</span> <span>5 min read</span></div>
-            <div style="margin-top:0.6rem;"><span class="score-pill"><span class="num">9.0</span> Engineering Score</span></div>
-          </div>
-        </article>
-      </div>
-
-      <!-- ENGINEERING EXPLAINED -->
-      <h2 class="section-title" style="margin-top:3rem;">⚙️ Engineering Explained</h2>
-      <div class="card-grid">
-        <div class="article-card" style="background:#fafbfc;">
-          <div class="card-body">
-            <div class="card-cat">Suspension</div>
-            <h3 class="card-title">What actually changes with a 50mm lift?</h3>
-            <p class="card-excerpt">Geometry, roll centre, and scrub radius — the engineering behind the height.</p>
+            <div class="card-cat">📤 upload here</div>
+            <h3 class="card-title">Blog 1/2</h3>
+            <p class="card-excerpt">Drop your blog content, images, and posts.</p>
+            <div class="upload-area" style="margin:0.8rem 0;">
+              ⬆️ click to upload (blog 1/2)
+            </div>
+            <!-- RED AMAZON LINK under blog -->
+            <div style="margin:1rem 0 0.2rem;">
+              <a href="#" class="amazon-red">🛒 Amazon · Blog</a>
+              <span style="font-size:0.7rem; color:#cc0000; margin-left:0.5rem;">(red link)</span>
+            </div>
+            <div class="card-meta" style="margin-top:0.5rem;">future content: blog posts, images, etc.</div>
           </div>
         </div>
-        <div class="article-card" style="background:#fafbfc;">
-          <div class="card-body">
-            <div class="card-cat">Towing</div>
-            <h3 class="card-title">Towball mass, GCM, and vehicle loading</h3>
-            <p class="card-excerpt">Understanding the numbers that keep you legal and safe.</p>
+        <!-- extra blog placeholder: image 1/2 and upload -->
+        <div class="article-card">
+          <div class="card-img" style="background:#e8e8e8;">
+            <span style="display:flex; gap:0.5rem; align-items:center;">
+              <span>📸</span> image 1/2 <span class="half-badge">png</span>
+            </span>
           </div>
-        </div>
-        <div class="article-card" style="background:#fafbfc;">
           <div class="card-body">
-            <div class="card-cat">Recovery</div>
-            <h3 class="card-title">How recovery points transfer load into the chassis</h3>
-            <p class="card-excerpt">Structural load paths and why mounting matters.</p>
+            <div class="card-cat">📤 upload here</div>
+            <h3 class="card-title">Blog 2/2</h3>
+            <p class="card-excerpt">Another upload slot for your blog content.</p>
+            <div class="upload-area" style="margin:0.8rem 0;">
+              ⬆️ click to upload (blog 2/2)
+            </div>
+            <div style="margin:1rem 0 0.2rem;">
+              <a href="#" class="amazon-red">🛒 Amazon · Blog</a>
+              <span style="font-size:0.7rem; color:#cc0000; margin-left:0.5rem;">(red link)</span>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- FEATURED PRODUCT REVIEWS (with Amazon affiliate buttons) -->
-      <h2 class="section-title">Featured Product Reviews</h2>
+      <!-- PRODUCTS SECTION: upload here, product 1/2, image 1/2, amazon red -->
+      <h2 class="section-title" id="products" style="margin-top:3rem;">📦 Products · Upload</h2>
       <div class="card-grid">
         <div class="product-card">
-          <div style="display:flex; justify-content:space-between;">
-            <span style="font-weight:700;">ARB Bull Bar</span>
-            <span class="score-pill"><span class="num">8.7</span>/10</span>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-weight:700;">Product 1/2</span>
+            <span class="half-badge">upload</span>
           </div>
-          <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin:0.8rem 0; font-size:0.9rem; color:#444;">
-            <span>Build: 9/10</span> <span>Material: 8/10</span> <span>Design: 9/10</span>
+          <div class="image-half" style="margin:0.8rem 0;">
+            <span>🖼️</span> image 1/2 <span class="half-badge">jpg</span>
           </div>
-          <p style="color:#444;">Full chassis integration, airbag compatible, steel construction.</p>
-          <div style="margin-top:0.8rem;">
-            <a href="#" class="affiliate-btn">🛒 Amazon AU →</a>
-            <a href="#" class="affiliate-btn">eBay AU →</a>
+          <div class="upload-area" style="margin:0.5rem 0;">
+            ⬆️ upload here (product 1/2)
           </div>
+          <div style="margin:1rem 0 0.2rem;">
+            <a href="#" class="amazon-red">🛒 Amazon · Products</a>
+            <span style="font-size:0.7rem; color:#cc0000; margin-left:0.5rem;">(red link)</span>
+          </div>
+          <p style="color:#444; font-size:0.9rem; margin-top:0.5rem;">future: product listings, variants, etc.</p>
         </div>
+
         <div class="product-card">
-          <div style="display:flex; justify-content:space-between;">
-            <span style="font-weight:700;">Recovery Pro 12K</span>
-            <span class="score-pill"><span class="num">8.2</span>/10</span>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-weight:700;">Product 2/2</span>
+            <span class="half-badge">upload</span>
           </div>
-          <div style="display:flex; gap:1.5rem; flex-wrap:wrap; margin:0.8rem 0; font-size:0.9rem; color:#444;">
-            <span>Build: 8/10</span> <span>Material: 8/10</span> <span>Design: 8/10</span>
+          <div class="image-half" style="margin:0.8rem 0;">
+            <span>📸</span> image 1/2 <span class="half-badge">png</span>
           </div>
-          <p style="color:#444;">Synthetic rope, IP67, wireless remote.</p>
-          <div style="margin-top:0.8rem;">
-            <a href="#" class="affiliate-btn">🛒 Amazon AU →</a>
-            <a href="#" class="affiliate-btn">eBay AU →</a>
+          <div class="upload-area" style="margin:0.5rem 0;">
+            ⬆️ upload here (product 2/2)
           </div>
+          <div style="margin:1rem 0 0.2rem;">
+            <a href="#" class="amazon-red">🛒 Amazon · Products</a>
+            <span style="font-size:0.7rem; color:#cc0000; margin-left:0.5rem;">(red link)</span>
+          </div>
+          <p style="color:#444; font-size:0.9rem; margin-top:0.5rem;">future: product details, pricing, etc.</p>
         </div>
       </div>
 
-      <!-- VEHICLE HUB -->
-      <h2 class="section-title">Vehicle Hub</h2>
+      <!-- VEHICLE HUB (black/white) -->
+      <h2 class="section-title" style="margin-top:3rem;">🚗 Vehicle Hub</h2>
       <div class="vehicle-grid">
         <div class="vehicle-tag">Toyota Hilux</div>
         <div class="vehicle-tag">LandCruiser 70</div>
@@ -637,19 +602,19 @@
         <div class="vehicle-tag">Mitsubishi Triton</div>
       </div>
 
-      <!-- BUYING GUIDES + NEWS -->
+      <!-- GUIDES & NEWS (black/white) -->
       <div style="display:grid; grid-template-columns:2fr 1fr; gap:2rem; margin:2rem 0;">
         <div>
-          <h3 class="section-title" style="margin-top:0;">Buying Guides</h3>
-          <ul style="list-style:none; background:#ffffff; border-radius:12px; padding:1rem 1.5rem; border:1px solid #e0e4e8;">
-            <li style="padding:0.6rem 0; border-bottom:1px solid #e0e4e8;"><a href="#">Best UHF radios for 4WD touring</a></li>
-            <li style="padding:0.6rem 0; border-bottom:1px solid #e0e4e8;"><a href="#">12V compressors: portable vs onboard</a></li>
-            <li style="padding:0.6rem 0;"><a href="#">Roof racks: load rating & aerodynamic design</a></li>
+          <h3 class="section-title" style="margin-top:0; border-left-color:#000000;">📘 Guides</h3>
+          <ul style="list-style:none; background:#ffffff; border-radius:12px; padding:1rem 1.5rem; border:2px solid #000000; box-shadow:0 4px 0 #000000;">
+            <li style="padding:0.6rem 0; border-bottom:1px solid #ddd;"><a href="#" style="color:#000;">Best UHF radios for 4WD touring</a></li>
+            <li style="padding:0.6rem 0; border-bottom:1px solid #ddd;"><a href="#" style="color:#000;">12V compressors: portable vs onboard</a></li>
+            <li style="padding:0.6rem 0;"><a href="#" style="color:#000;">Roof racks: load rating & aerodynamic design</a></li>
           </ul>
         </div>
         <div>
-          <h3 class="section-title" style="margin-top:0;">Latest News</h3>
-          <div style="background:#ffffff; border-radius:12px; padding:1rem 1.5rem; border:1px solid #e0e4e8;">
+          <h3 class="section-title" style="margin-top:0; border-left-color:#000000;">📰 News</h3>
+          <div style="background:#ffffff; border-radius:12px; padding:1rem 1.5rem; border:2px solid #000000; box-shadow:0 4px 0 #000000;">
             <p style="font-weight:600;">New 4x4 laws in QLD</p>
             <p style="font-size:0.9rem; color:#444;">GVM upgrades and engineering certification changes.</p>
             <p style="font-weight:600; margin-top:1rem;">ARB releases new canopy</p>
@@ -658,13 +623,13 @@
         </div>
       </div>
 
-      <!-- NEWSLETTER -->
+      <!-- NEWSLETTER (black/white) -->
       <div class="newsletter">
-        <h2 style="font-family:'Roboto Slab',serif; color:#1a1a1a;">GET THE GOOD STUFF. SKIP THE BS.</h2>
-        <p style="color:#444; margin:0.5rem 0 1.2rem;">Weekly 4x4 reviews, engineering breakdowns, and buying guides.</p>
+        <h2 style="font-family:'Roboto Slab',serif; color:#1a1a1a;">⬛ STAY IN THE LOOP</h2>
+        <p style="color:#444; margin:0.5rem 0 1.2rem;">Get updates when you add new content.</p>
         <div class="flex-wrap">
           <input type="email" placeholder="Your email" />
-          <button class="btn btn-primary">JOIN THE COMMUNITY</button>
+          <button class="btn btn-primary">SUBSCRIBE</button>
         </div>
       </div>
     </div>
@@ -676,32 +641,57 @@
       <div class="footer-grid">
         <div>
           <strong style="color:#fff;">JuneTrail</strong><br/>
-          <span style="color:#888;">4x4 &amp; Adventure Gear</span>
+          <span style="color:#888;">black & white · no logo</span>
         </div>
-        <div><a href="#">About</a><a href="#">Reviews</a><a href="#">Engineering</a><a href="#">Buying Guides</a></div>
-        <div><a href="#">Privacy Policy</a><a href="#">Terms</a><a href="#">Affiliate Disclosure</a><a href="#">Contact</a></div>
+        <div><a href="#">Home</a><a href="#">Vehicle</a><a href="#">News</a><a href="#">Blog</a></div>
+        <div><a href="#">Products</a><a href="#">Guides</a><a href="#">About</a><a href="#">Contact</a></div>
         <div>
-          <span style="color:#888;">Follow us</span><br/>
+          <span style="color:#888;">Follow</span><br/>
           <a href="#">Instagram</a> <a href="#">YouTube</a> <a href="#">Facebook</a>
         </div>
       </div>
-      <div class="copyright">© 2026 JuneTrail — Built for Amazon Affiliate &amp; 4x4 Content</div>
+      <div class="copyright">© 2026 JuneTrail — black & white · red amazon links</div>
     </div>
   </footer>
 
-  <!-- Search demo -->
+  <!-- simple interactions -->
   <script>
     (function() {
+      // top menu clicks: show future content message
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          e.preventDefault();
+          const page = this.textContent.trim();
+          alert(`⬛ "${page}" page — you can add your content here later.`);
+        });
+      });
+
+      // search
       const searchBtn = document.querySelector('.search-wrap button');
       const searchInput = document.querySelector('.search-wrap input');
       if (searchBtn && searchInput) {
         searchBtn.addEventListener('click', function(e) {
           e.preventDefault();
           const val = searchInput.value.trim();
-          if (val.length > 0) alert(`🔍 Searching for "${val}" – results would show articles, vehicles, and products.`);
+          if (val.length > 0) alert(`🔍 Searching for "${val}" – results would appear here.`);
           else alert('Please enter a search term.');
         });
       }
+
+      // upload areas: show demo message
+      document.querySelectorAll('.upload-area').forEach(el => {
+        el.addEventListener('click', function() {
+          alert('📤 Upload functionality — you can attach a file picker or drag-and-drop later.');
+        });
+      });
+
+      // amazon red links: show placeholder
+      document.querySelectorAll('.amazon-red').forEach(el => {
+        el.addEventListener('click', function(e) {
+          e.preventDefault();
+          alert('🔴 Amazon link (red) – placeholder for affiliate or product link.');
+        });
+      });
     })();
   </script>
 </body>
